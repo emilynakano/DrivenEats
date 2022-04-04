@@ -9,11 +9,13 @@ function selecionarPrato(nomePrato) {
   if (botaoSelecionado !== null) {
     //REMOVE A CLASSE SELECIONADO
     botaoSelecionado.classList.remove("selecionado");
+    Document.querySelector(".vector").classList.add("escondido")
   }
 
-  //ADICIONO A CLASSE SELECIONADO
+  //ADICIONA A CLASSE SELECIONADO
   nomePrato.classList.add("selecionado");
   Prato = nomePrato.innerHTML;
+  Document.querySelector(".vector").classList.remove("escondido")
 
 };
 
